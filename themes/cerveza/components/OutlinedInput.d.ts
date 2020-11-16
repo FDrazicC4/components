@@ -3,6 +3,10 @@ declare const OutlinedInput: {
         MuiOutlinedInput: {
             root: {
                 transition: string;
+                borderColor: string;
+                '&:hover $notchedOutline': {
+                    borderColor: string;
+                };
                 '& fieldset': {
                     transition: string;
                     borderWidth: string;
@@ -18,6 +22,7 @@ declare const OutlinedInput: {
             };
             input: {
                 padding: string;
+                color: string;
                 '& ~ fieldset': {
                     top: number;
                 };

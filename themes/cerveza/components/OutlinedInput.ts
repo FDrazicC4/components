@@ -8,6 +8,11 @@ const OutlinedInput = {
 
             root: {
                 transition: 'all 0.3s',
+                borderColor: color.blueGray.light,
+
+                '&:hover $notchedOutline': {
+                    borderColor: color.blueGray.light
+                },
 
                 '& fieldset': {
                     transition: 'all 0.3s',
@@ -29,6 +34,7 @@ const OutlinedInput = {
 
             input: {
                 padding: '1rem',
+                color: color.blueGray.darker,
 
                 '& ~ fieldset': {
                     top: 0,
